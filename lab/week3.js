@@ -32,9 +32,43 @@ let promotion3Icon          // expects a String (emoji)
 
 function pageLoad() {
   // 👇 YOUR CODE BEGINS HERE. DON'T CHANGE ANY OTHER CODE. 👇
-
+  
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   console.log(database)
+
+  numberOfProducts = database.products.length
+  products = database.products
+ 
+  let promo1 = database.promotions[getRandomInt(database.promotions.length - 1)]
+  let promo2 = database.promotions[getRandomInt(database.promotions.length - 1)]
+  let promo3 = database.promotions[getRandomInt(database.promotions.length - 1)]
+  
+  promotion1Description = promo1.description
+  promotion2Description = promo2.description
+  promotion3Description = promo3.description
+ 
+  if (promo1.type == 'shipping') {
+    promotion1Icon = '🚛'
+  } else if (promo1.type == 'discount') {
+    promotion1Icon = '🤑'
+  } else
+    promotion1Icon = '🎰'
+  
+  if (promo2.type == 'shipping') {
+    promotion2Icon = '🚛'
+  } else if (promo2.type == 'discount') {
+    promotion2Icon = '🤑'
+  } else
+    promotion2Icon = '🎰'
+ 
+  if (promo3.type == 'shipping') {
+    promotion3Icon = '🚛'
+  } else if (promo3.type == 'discount') {
+    promotion3Icon = '🤑'
+  } else
+    promotion3Icon = '🎰'  
+
+  console.log(promotion1Description)
 
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }
