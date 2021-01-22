@@ -4,8 +4,22 @@ document.querySelector('.nom-nom-nom').addEventListener('click', (event) => {
 
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   // The variable 'dinner' is already set to the value in the text input
+  
+  console.log(dinner)
+
   let output
-  output = '🌮'
+
+    if (dinner == 'tacos') {
+    // console.log('that works')
+    output = '🌮'
+  } else if (dinner == 'broccoli') {
+    output = '🥦'
+  } else {  
+    output = '🤣'
+  }
+
+  
+  
 
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
   /*
