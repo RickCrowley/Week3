@@ -23,7 +23,7 @@ function pageLoad() {
     } else if (total == 2 || total == 3 || total == 12 ) {
     output = 'CRAPS! You Lose!'      
     } else 
-    output = 'The point is ' + total
+    output = `The point is ${total}`
 
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 
